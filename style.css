@@ -1,0 +1,36 @@
+.headerflex {
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    flex-wrap: wrap;
+    align-items: center;
+
+} 
+
+div.box {
+    background-color: cadetblue;
+    width: auto;
+    height: auto;
+    padding: 1em;
+}
+
+.box span {
+    
+    padding-right: 5em;
+}
+
+img {
+    width: 10em;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+#whitespace {
+    height: 50em;
+}
+
+.sectionflex {
+    display: flex;
+    background-color: darkseagreen;
+    justify-content: space-evenly;
+}
