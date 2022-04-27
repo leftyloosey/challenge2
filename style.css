@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
 
-/*image formatting section */
+/*general formatting section */
 
 img {
     width: 10em;
@@ -20,15 +22,6 @@ img {
     height: 50em;
 }
 
-/*  header flex formatting section */
-
-.headerflex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 #hbox span {
     padding-left: 4em;
 }
@@ -40,10 +33,24 @@ img {
     border-top: 0em;
     border-left: 0em;
     border-width: 0.2em;
-   
 }
 
-/* body flex formatting section */
+#span-b {
+    height: 5em;
+    border-style: solid;
+    border-bottom: 0em;
+    border-top: 0em;
+    border-right: 0em;
+    border-width: 0.2em;
+}
+/* flex formatting section */
+
+.headerflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 #section-about {
     display: flex;
@@ -52,7 +59,7 @@ img {
 
 #section-work {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #section-contact {
