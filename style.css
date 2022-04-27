@@ -4,11 +4,16 @@
 
 /*image formatting section */
 
-#imgh {
+img {
     width: 10em;
     height: auto;
     border-radius: 0.5em;
-   
+}
+
+#img-b {
+    width: 20em;
+    height: auto;
+    border-radius: 1em;
 }
 
 #whitespace {
@@ -28,7 +33,7 @@
     padding-left: 4em;
 }
 
-#dspan {
+#span-a {
     height: 5em;
     border-style: solid;
     border-bottom: 0em;
@@ -48,4 +53,9 @@
 #section-work {
     display: flex;
     justify-content: space-evenly;
+}
+
+#section-contact {
+    display: flex;
+    justify-content:space-between;
 }
