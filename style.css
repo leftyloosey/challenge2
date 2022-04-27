@@ -4,23 +4,35 @@
     color: black;
 }
 
-/*general formatting section */
+/*image formatting section */
 
-img {
+img, #img-b {
     width: 10em;
     height: auto;
     border-radius: 0.5em;
 }
 
-#img-b {
-    width: 20em;
+#img-a {
+    width: 5em;
     height: auto;
     border-radius: 1em;
+}
+
+#img-c {
+    width: 20em;
+    height: auto;
+    border-radius: 0.5em;
+}
+#img-a:hover, #img-b:hover, #img-c:hover {
+    opacity: .50;
+    transition: 0.5 ease-in-out;
 }
 
 #whitespace {
     height: 50em;
 }
+
+/* general formatting section */
 
 #hbox span {
     padding-left: 4em;
@@ -43,6 +55,22 @@ img {
     border-right: 0em;
     border-width: 0.2em;
 }
+
+#img-b:hover,#img-c:hover {
+    opacity: 0.50;
+    transition: 0.5s ease-in-out;
+}
+
+#img-c:hover {
+    opacity: 0.50;
+    transition: 0.5s ease-in-out;
+}
+
+#img-c:hover {
+    opacity: 0.50;
+    transition: 0.5s ease-in-out;
+}
+
 /* flex formatting section */
 
 .headerflex {
@@ -65,4 +93,23 @@ img {
 #section-contact {
     display: flex;
     justify-content:space-between;
+}
+
+/* query */
+
+@media screen and (max-width:600px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #section-work {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content:end;
+    }
+    /* #img-a,#img-b,#img-c { */
+    
 }
