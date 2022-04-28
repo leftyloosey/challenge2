@@ -23,12 +23,15 @@ img, #img-b {
     height: auto;
     border-radius: 0.5em;
 }
-#img-a:hover, #img-b:hover, #img-c:hover {
-    opacity: .50;
-    transition: 0.5 ease-in-out;
+
+
+#img-a:hover,#img-b:hover, #img-c:hover {
+    opacity: .5;
+    transition: 0.5s ease-in-out;
 }
 
 #whitespace {
+    display: flex;
     height: 50em;
 }
 
@@ -38,6 +41,21 @@ img, #img-b {
     padding-left: 4em;
 }
 
+#section-work span {
+    padding-left: 5em;
+}
+
+#span-h {
+    height: 5em;
+    border-style: solid;
+    border-bottom: 0em;
+    border-top: 0em;
+    border-left: 0em;
+    border-width: 0.2em;
+    margin-right: 25%;
+    padding-right: 1em;
+}
+
 #span-a {
     height: 5em;
     border-style: solid;
@@ -45,6 +63,7 @@ img, #img-b {
     border-top: 0em;
     border-left: 0em;
     border-width: 0.2em;
+    
 }
 
 #span-b {
@@ -53,22 +72,9 @@ img, #img-b {
     border-bottom: 0em;
     border-top: 0em;
     border-right: 0em;
-    border-width: 0.2em;
-}
-
-#img-b:hover,#img-c:hover {
-    opacity: 0.50;
-    transition: 0.5s ease-in-out;
-}
-
-#img-c:hover {
-    opacity: 0.50;
-    transition: 0.5s ease-in-out;
-}
-
-#img-c:hover {
-    opacity: 0.50;
-    transition: 0.5s ease-in-out;
+    border-width: 0.1em;
+    float: right;
+    max-height: 5em;
 }
 
 /* flex formatting section */
@@ -79,6 +85,9 @@ img, #img-b {
     flex-wrap: wrap;
     align-items: center;
 }
+header span {
+    align-self: top;
+}
 
 #section-about {
     display: flex;
@@ -87,12 +96,21 @@ img, #img-b {
 
 #section-work {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    list-style: none;
+    
 }
 
 #section-contact {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+}
+
+.resize {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 /* query */
@@ -105,11 +123,31 @@ img, #img-b {
     }
 
     #section-work {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        justify-content:end;
+        display: inline-block;
+        list-style: none;
+     
+        
     }
-    /* #img-a,#img-b,#img-c { */
     
+    .resize {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+    
+    }
+    
+    #span-b {
+        float: right;
+        max-width: 2em;
+        
+    }
+ 
+    #img-a,#img-b { 
+        width:auto;
+        height: 3em;
+    }
+    #img-c {
+        height:4em;
+        width:auto;
+    }
 }
