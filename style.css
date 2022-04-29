@@ -110,7 +110,10 @@ header span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
 
+#work {
+    visibility: visible;
 }
 
 /* query */
