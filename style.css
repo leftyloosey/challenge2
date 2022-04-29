@@ -112,8 +112,8 @@ header span {
     justify-content: space-between;
 }
 
-#work {
-    visibility: visible;
+#wclick {
+    display: inline;
 }
 
 /* query */

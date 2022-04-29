@@ -51,23 +51,24 @@
             
         <img id="whitespace" src="white.jpeg">
 <!--work-->
+        
         <div class="resize">
             <ul id="section-work">
             
                 <li>
-                    <a href="#"><img id="img-a" src="fax.webp" alt="the eternal fax machine"></a>
+                    <a href="#"><img id="img-a" onmouseover = "mouseOver(this.id)"  onmouseleave = "mouseLeave()" src="fax.webp" alt="the eternal fax machine"></a>
                 </li>
 
                 <li>
-                    <a href="#"><img id="img-b" src="pigeon.webp" alt="a gallant pigeon of the air"></a>
+                    <a href="#"><img id="img-b" onmouseover = "mouseOver(this.id)" onmouseleave = "mouseLeave()" src="pigeon.webp" alt="a gallant pigeon of the air"></a>
                 </li>
 
                 <li>
-                    <a href="#"><img id="img-c" src="wd.jpeg" alt="the terrifying scourge of the new world order"></a>
+                    <a href="#"><img id="img-c" onmouseover = "mouseOver(this.id)" onmouseleave = "mouseLeave()" src="wd.jpeg" alt="the terrifying scourge of the new world order"></a>
                 </li>
 
                 <li>
-                    <span id="work">work</span>
+                    <span id="wclick"> </span>
                 </li>
                 
             </ul>
@@ -77,6 +78,8 @@
             </div>
         </div>
         
+        <script src = "script.js"></script>
+
         <img id="whitespace" src="white.jpeg">
         
 <!--contact-->
@@ -102,5 +105,14 @@
             </div>
 
         </section>
+
+  
+    
+<script type="text/javascript">
+  function reply_click(clicked_id)
+  {
+      console.log(clicked_id);
+  }
+</script>
 
 </html>
